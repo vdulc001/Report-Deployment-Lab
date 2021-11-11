@@ -30,21 +30,16 @@ javadoc {
 
 build.dependsOn javadoc
 
-task reports {
-	build.dependsOn test
-	build.dependsOn javadoc
-}
+task reports (dependsOn: ['test', 'javadoc'])
 
-task deployReports {
-	reports
-	
+task deployReports (dependsOn: ['reports']) {
 	task copyDocs (type: Copy) {
-		from 'build/docs/'
-		into 'gh-pages/docs/'
+		from 'build/docs'
+		into '$buildDir/gh-pages/docs'
 	}
 	
 	task copyReports (type: Copy) {
 		from 'build/reports/'
-		into 'gh-pages/reports/'
+		into '$buildDir/gh-pages/reports/'
 	}
 }
