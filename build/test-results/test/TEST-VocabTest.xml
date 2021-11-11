@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="VocabTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-10T23:57:30" hostname="sol.cs.odu.edu" time="0.037">
+  <properties/>
+  <testcase name="testAddStartingWord()" classname="VocabTest" time="0.037"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

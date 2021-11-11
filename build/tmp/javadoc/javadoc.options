@@ -1,0 +1,10 @@
+-classpath '/home/cs_vdulc001/playing/Report-Deployment-Lab/build/classes/java/main:/home/cs_vdulc001/playing/Report-Deployment-Lab/build/resources/main'
+-d '/home/cs_vdulc001/playing/Report-Deployment-Lab/build/docs/javadoc'
+-doctitle 'Report-Deployment-Lab API'
+-link 'https://docs.oracle.com/javase/8/docs/api/'
+-link 'gradle/javadocs/jdk'
+-notimestamp 
+-quiet 
+-windowtitle 'Report-Deployment-Lab API'
+'/home/cs_vdulc001/playing/Report-Deployment-Lab/src/main/java/Author.java'
+'/home/cs_vdulc001/playing/Report-Deployment-Lab/src/main/java/Vocabulary.java'
