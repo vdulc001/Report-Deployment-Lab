@@ -20,3 +20,31 @@ test {
      ignoreFailures = true
      useJUnitPlatform()
 }
+
+javadoc {
+	options.with {
+		links 'https://docs.oracle.com/javase/8/docs/api/', 'gradle/javadocs/jdk'
+	}
+	failOnError = false;
+}
+
+build.dependsOn javadoc
+
+task reports {
+	build.dependsOn test
+	build.dependsOn javadoc
+}
+
+task deployReports {
+	reports
+	
+	task copyDocs (type: Copy) {
+		from 'build/docs/'
+		into 'gh-pages/docs/'
+	}
+	
+	task copyReports (type: Copy) {
+		from 'build/reports/'
+		into 'gh-pages/reports/'
+	}
+}
