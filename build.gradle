@@ -32,10 +32,4 @@ build.dependsOn javadoc
 
 task reports (dependsOn: ['test', 'javadoc'])
 
-task deployReports (dependsOn: ['reports']) {
-	task copyDocs (type: Copy) {
-	}
-	
-	task copyReports (type: Copy) {
-	}
-}
+task deployReports (dependsOn: ['reports'])
