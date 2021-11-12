@@ -34,12 +34,8 @@ task reports (dependsOn: ['test', 'javadoc'])
 
 task deployReports (dependsOn: ['reports']) {
 	task copyDocs (type: Copy) {
-		from 'build/docs'
-		into '$buildDir/gh-pages/docs'
 	}
 	
 	task copyReports (type: Copy) {
-		from 'build/reports/'
-		into '$buildDir/gh-pages/reports/'
 	}
 }
