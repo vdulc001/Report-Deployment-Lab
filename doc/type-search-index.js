@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"Author"},{"p":"<Unnamed>","l":"VocabTest"},{"p":"<Unnamed>","l":"Vocabulary"}];updateSearchResults();
