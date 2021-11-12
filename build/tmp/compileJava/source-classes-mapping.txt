@@ -1,4 +1,0 @@
-Author.java
- Author
-Vocabulary.java
- Vocabulary
